@@ -8,6 +8,28 @@
         </style>
 <title>Minecraft Smile</title>
 <img src="icon.png" alt="icon" style="float:left;width:22px;height:22px;"><a href="index.html" style="float:left">Home</a>
+<br><br/>
+<form name="login" action="">
+    <label for="username">Username:</label><br>
+    <input type="text" id="username" name="username"><br>
+    <label for="password">Password:</label><br>
+    <input type="password" id="password" name="password">
+    <br></br>
+    <input type="button" name="button" value="Login" onClick="check(this.form)">
+</form>
+<script>
+    function check (form) {
+        username = form.username.value
+        password = form.password.value
+        if (username === "ClaytonM634") {
+            if (password === "ClaytonLovesMinecraft535") {
+                document.cookie = "username=ClaytonM634";
+                cookie = document.cookie;
+                alert(cookie);
+            }
+        }
+    };
+</script>
 </head>
 <body>
 </body>
